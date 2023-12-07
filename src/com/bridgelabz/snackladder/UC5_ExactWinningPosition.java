@@ -1,6 +1,7 @@
 package com.bridgelabz.snackladder;
-import java.util.Random;
-public class PlayerWinningPosition {
+
+public class UC5_ExactWinningPosition {
+
         static public final int Starting_Position_Of_Player = 0;
         static public final int Ending_Position_Of_Player = 100;
         public static final int ladder = 2;
@@ -8,11 +9,12 @@ public class PlayerWinningPosition {
         public static final int noPlay = 0;
 
         public static int rollDie() {
-            int dieValue = (int)(Math.random() * 10) % 6 + 1;
+            int dieValue = (int) (Math.random() * 10) % 6 + 1;
             return dieValue;
         }
 
         public static void main(String[] args) {
+            System.out.println("Welcome in snake and ladder game");
             int presentPlayerPosition = 0;
 
             while (presentPlayerPosition < Ending_Position_Of_Player) {
@@ -21,17 +23,17 @@ public class PlayerWinningPosition {
 
                 switch (checkPosition) {
                     case snake:
-                        currentPosition =  rollDie();
-                        if ((presentPlayerPosition-currentPosition)>=0 ) {
+                        currentPosition = rollDie();
+                        if ((presentPlayerPosition - currentPosition) >= 0) {
                             presentPlayerPosition -= currentPosition;
-                            System.out.println("player is on snake " +presentPlayerPosition);
+                            System.out.println("player is on snake " + presentPlayerPosition);
                         }
                         break;
                     case ladder:
-                        currentPosition =  rollDie();
-                        if((presentPlayerPosition+currentPosition)<=100 ) {
+                        currentPosition = rollDie();
+                        if ((presentPlayerPosition + currentPosition) <= 100) {
                             presentPlayerPosition += currentPosition;
-                            System.out.println("player is on Ladder " +presentPlayerPosition);
+                            System.out.println("player is on Ladder " + presentPlayerPosition);
                         }
                         break;
                     default:
@@ -43,4 +45,5 @@ public class PlayerWinningPosition {
         }
 
     }
+
 

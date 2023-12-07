@@ -1,6 +1,6 @@
 package com.bridgelabz.snackladder;
 import java.util.Random;
-public class SinglePlayerSnackLadder {
+public class UC2_RollDice {
     static final int initialPosition = 0;
 
         public static void main(String[] args) {

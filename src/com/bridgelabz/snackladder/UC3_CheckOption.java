@@ -1,6 +1,6 @@
 package com.bridgelabz.snackladder;
-import java.util.Random;
-class CheckOption{
+
+class UC3_CheckOption {
     static int initialPosition=0;
     static final  int ladder=1;
     static final int snake=2;

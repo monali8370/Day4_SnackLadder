@@ -1,9 +1,13 @@
 package com.bridgelabz.snackladder;
 
 public class InitialPosition {
-    int initialposition=0;
-    public static void main(String[] args) {
-        System.out.println("welcome in snack ladder game started at 0 position");
 
+       public static final int BoardSize=100;
+
+        public static void main(String[] args) {
+            int initialPosition=0;
+            System.out.println("starting position is:"+initialPosition);
+        }
     }
-}
+
+
